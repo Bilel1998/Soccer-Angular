@@ -19,6 +19,7 @@ export class PlayerService {
   addPlayerService(player:any,image:File) {
     let formData = new FormData();
     formData.append('name', player.nom);
+    
     formData.append('poste', player.equipe);
     formData.append('description', player.dateNaissance);
     formData.append('image', image);
