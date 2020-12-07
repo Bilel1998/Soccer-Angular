@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nom</th>
+        <th scope="col">Equipe</th>
+        <th scope="col">Date de naissance</th>
+      </tr>
+    </thead>
+    <tbody *ngFor='let player of p'>
+      <tr>
+        <td>{{player.nom}}</td>
+        <td>{{player.equipe}}</td>
+        <td>{{player.dateNaissance}}</td>
+      </tr>
+     
+    </tbody>
+  </table>

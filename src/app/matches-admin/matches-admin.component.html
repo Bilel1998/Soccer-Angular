@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Equipe 1</th>
+        <th scope="col">Equipe 2</th>
+        <th scope="col">Score</th>
+        <th scope="col">Action</th>
+
+        
+      </tr>
+    </thead>
+    <tbody *ngFor='let match of m'>
+      <tr>
+        <td>{{match.teamOne}}</td>
+        <td>{{match.teamTwo}}</td>
+        <td>{{match.scoreOne}} - {{match.scoreTwo}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="delete(match.id)">Delete</button>
+        </td>
+
+      </tr>
+     
+    </tbody>
+  </table>
